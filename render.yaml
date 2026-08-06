@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: invitacion-emily-isabella
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .

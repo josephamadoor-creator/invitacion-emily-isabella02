@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de enlaces | Emily Isabella</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body{min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(180deg,#fcecef,#fffaf7)}
+    .generator{width:min(100%,680px);padding:45px 28px;border:1px solid var(--gold-soft);background:#fffaf7;box-shadow:0 22px 60px rgba(80,56,61,.10);text-align:center}
+    .generator h1{font:600 clamp(46px,10vw,72px)/1 "Cormorant Garamond",serif;color:var(--mauve);margin:0 0 10px}
+    .generator p{line-height:1.6}
+    .form-grid{display:grid;gap:16px;margin-top:30px;text-align:left}
+    label{font-size:12px;letter-spacing:.15em;color:var(--rose)}
+    input,select{width:100%;padding:16px;border:1px solid var(--gold-soft);background:white;font:inherit;color:var(--mauve)}
+    .result{margin-top:25px;padding:16px;background:#fdf0f2;border:1px dashed var(--rose);word-break:break-all}
+    .generator button{width:100%;padding:17px;border:0;background:var(--rose);color:white;letter-spacing:.18em;margin-top:10px}
+    .secondary{background:var(--mauve)!important}
+  </style>
+</head>
+<body>
+  <div class="generator">
+    <p class="eyebrow">EMILY ISABELLA</p>
+    <h1>Generador de enlaces</h1>
+    <p>Crea un enlace personalizado con el nombre del invitado y la cantidad de pases asignados.</p>
+
+    <div class="form-grid">
+      <label for="baseUrl">URL DE TU INVITACIÓN</label>
+      <input id="baseUrl" value="https://invitacion-emily-isabella.onrender.com/">
+
+      <label for="guest">NOMBRE DEL INVITADO O FAMILIA</label>
+      <input id="guest" placeholder="Ejemplo: Familia Hernández">
+
+      <label for="passes">PASES ASIGNADOS</label>
+      <select id="passes">
+        <option value="1">1 pase</option>
+        <option value="2">2 pases</option>
+        <option value="3">3 pases</option>
+        <option value="4" selected>4 pases</option>
+        <option value="5">5 pases</option>
+        <option value="6">6 pases</option>
+        <option value="7">7 pases</option>
+        <option value="9">9 pases</option>
+      </select>
+
+      <button id="generateBtn">GENERAR ENLACE</button>
+      <button id="copyBtn" class="secondary">COPIAR ENLACE</button>
+    </div>
+
+    <div class="result" id="result">Aquí aparecerá el enlace.</div>
+  </div>
+
+  <script src="js/generador.js"></script>
+</body>
+</html>

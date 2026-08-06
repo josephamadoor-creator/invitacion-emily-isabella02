@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff9f7" />
+  <title>XV Emily Isabella</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <div class="petals" aria-hidden="true">
+    <span class="petal p1"></span><span class="petal p2"></span>
+    <span class="petal p3"></span><span class="petal p4"></span>
+    <span class="petal p5"></span><span class="petal p6"></span>
+    <span class="petal p7"></span><span class="petal p8"></span>
+  </div>
+
+  <audio id="musica" loop>
+    <source src="assets/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="floating-actions">
+    <button class="floating-btn" id="musicBtn" aria-label="Reproducir o pausar música">♫</button>
+    <button class="floating-btn" id="goConfirmBtn" aria-label="Ir a confirmación">✓</button>
+  </div>
+
+  <main>
+
+    <section class="hero section-light" id="inicio">
+      <div class="frame hero-frame">
+        <div class="corner corner-tl"></div>
+
+        <div class="monogram-circle">XV</div>
+        <p class="eyebrow">MIS XV AÑOS</p>
+        <div class="tiny-divider"></div>
+
+        <h1 class="name">Emily</h1>
+        <p class="middle-name">Isabella</p>
+
+        <p class="hero-phrase">Una noche para recordar, un sueño<br>por comenzar.</p>
+
+        <div class="date-row">
+          <span>SÁBADO</span>
+          <strong>07</strong>
+          <span>NOVIEMBRE · 2026</span>
+        </div>
+
+        <a class="primary-btn" href="#mensaje">DESCUBRIR INVITACIÓN</a>
+        <div class="scroll-line"></div>
+        <p class="scroll-hint">DESLIZA PARA CONTINUAR</p>
+      </div>
+    </section>
+
+    <section class="section-light" id="mensaje">
+      <div class="content-narrow">
+        <p class="eyebrow">CON AMOR Y GRATITUD</p>
+        <div class="sparkle">✦</div>
+
+        <p class="script-text">
+          Con la bendición de Dios y el amor de quienes me han guiado en cada uno de mis pasos hasta llegar a este momento tan especial, tengo el honor de invitarte a celebrar mis XV años.
+        </p>
+
+        <div class="gold-line"></div>
+
+        <p class="eyebrow gold">MI MADRE</p>
+        <h2 class="person-name">Mayra Isabel<br>Sánchez Olmos</h2>
+
+        <div class="gold-line"></div>
+
+        <p class="eyebrow gold">MIS PADRINOS</p>
+        <h2 class="person-name">Yesica Sánchez<br><span class="amp">&amp;</span><br>José Luis Bautista</h2>
+      </div>
+    </section>
+
+    <section class="section-rose celebration">
+      <div class="content-narrow">
+        <div class="watermark">XV</div>
+        <p class="eyebrow light">LA CELEBRACIÓN DE UN SUEÑO</p>
+        <h2 class="display-light">Quiero compartir contigo este momento inolvidable</h2>
+
+        <p class="rose-text">
+          Hay instantes que permanecen para siempre en el corazón. Por eso deseo que seas parte de este día lleno de alegría, emoción y amor.
+        </p>
+
+        <p class="signature">Emily Isabella</p>
+      </div>
+    </section>
+
+    <section class="section-light countdown-section">
+      <div class="content-wide">
+        <p class="eyebrow">EL GRAN DÍA SE ACERCA</p>
+        <h2 class="display-dark">Cuenta regresiva</h2>
+
+        <div class="countdown-grid" id="countdown">
+          <div class="count-box"><strong id="days">00</strong><span>DÍAS</span></div>
+          <div class="count-box"><strong id="hours">00</strong><span>HORAS</span></div>
+          <div class="count-box"><strong id="minutes">00</strong><span>MINUTOS</span></div>
+          <div class="count-box"><strong id="seconds">00</strong><span>SEGUNDOS</span></div>
+        </div>
+
+        <p class="script-small">Cada día falta menos para celebrar juntos.</p>
+      </div>
+    </section>
+
+    <section class="section-light save-date">
+      <div class="content-narrow">
+        <p class="eyebrow">SAVE THE DATE</p>
+        <p class="month">NOVIEMBRE</p>
+        <div class="big-date">07</div>
+        <p class="year">2026</p>
+        <div class="gold-line"></div>
+        <p class="weekday">SÁBADO</p>
+        <div class="gold-line"></div>
+        <p class="event-time">4:30 P. M.</p>
+        <div class="gold-line"></div>
+        <a class="text-link" href="#lugar">CONSULTAR DETALLES</a>
+      </div>
+    </section>
+
+    <section class="section-soft" id="lugar">
+      <div class="content-wide">
+        <p class="eyebrow">LUGAR DE CELEBRACIÓN</p>
+        <h2 class="display-dark">Ceremonia y recepción</h2>
+
+        <div class="venue-card">
+          <div class="church-icon"><img src="assets/iglesia.png" alt="Icono de iglesia"></div>
+          <p class="eyebrow gold">CEREMONIA</p>
+          <p class="venue-time">4:30 p. m.</p>
+          <h3>Salón Cristal, Jardín en Cardonal</h3>
+          <p>La ceremonia y la recepción se realizarán en el mismo lugar.</p>
+          <a class="outline-btn" href="https://maps.app.goo.gl/pCCaTfniqAKEzQYV6" target="_blank" rel="noopener">VER UBICACIÓN</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light itinerary">
+      <div class="content-wide">
+        <p class="eyebrow">UNA TARDE INOLVIDABLE</p>
+        <h2 class="display-dark">Itinerario</h2>
+
+        <div class="timeline">
+          <div class="timeline-item"><time>4:30</time><div><h3>Ceremonia</h3><p>Inicio de la celebración.</p></div></div>
+          <div class="timeline-item"><time>5:30</time><div><h3>Recepción</h3><p>Bienvenida a familiares e invitados.</p></div></div>
+          <div class="timeline-item"><time>7:00</time><div><h3>Vals y brindis</h3><p>Uno de los momentos más especiales.</p></div></div>
+          <div class="timeline-item"><time>8:00</time><div><h3>Cena y celebración</h3><p>Disfrutemos juntos esta gran noche.</p></div></div>
+        </div>
+
+        <p class="small-note">Los horarios posteriores a la ceremonia pueden modificarse ligeramente.</p>
+      </div>
+    </section>
+
+    <section class="section-soft dress-code">
+      <div class="content-wide">
+        <p class="eyebrow">DRESS CODE</p>
+        <h2 class="display-dark">Vestimenta formal</h2>
+
+        <div class="dress-card">
+          <div class="dress-image"><img src="assets/vestimenta-formal.png" alt="Vestimenta formal para damas y caballeros"></div>
+          <h3>Elegancia para una noche especial</h3>
+          <p>Agradecemos presentarse con vestimenta formal para acompañarnos en esta celebración.</p>
+
+          <div class="dress-options">
+            <div><strong>Damas</strong><span>Vestido formal</span></div>
+            <div><strong>Caballeros</strong><span>Traje formal</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light passes-section" id="pases-invitacion">
+      <div class="passes-frame">
+        <div class="corner corner-tl"></div>
+
+        <p class="passes-initials">EI</p>
+        <p class="eyebrow">INFORMACIÓN IMPORTANTE</p>
+        <h2 class="passes-title">Pases de<br>invitación</h2>
+
+        <div class="ornament"><span></span><b>✦</b><span></span></div>
+
+        <p class="passes-description">
+          La cantidad de pases asignados a tu familia la podrás ver aquí mismo en tu invitación.
+        </p>
+
+        <div class="passes-card">
+          <p class="eyebrow">PASES ASIGNADOS</p>
+          <div class="ornament"><span></span><b>✦</b><span></span></div>
+          <p class="passes-number" id="numeroPases">—</p>
+          <div class="ornament"><span></span><b>✦</b><span></span></div>
+          <p class="passes-valid" id="textoPasesValidos">Consultando tus pases...</p>
+        </div>
+
+        <div class="ornament final-ornament"><span></span><b>✦</b><span></span></div>
+        <p class="passes-note">Los pases son personales e intransferibles.</p>
+      </div>
+    </section>
+
+    <section class="section-rose confirm-section" id="confirmar">
+      <div class="content-narrow">
+        <p class="eyebrow light">CONFIRMACIÓN DE ASISTENCIA</p>
+        <h2 class="display-light">Será un honor contar contigo</h2>
+        <p class="rose-text">Confirma tu asistencia para ayudarnos a preparar cada detalle de esta celebración.</p>
+
+        <a class="light-btn" id="whatsappBtn" href="#" target="_blank" rel="noopener">CONFIRMAR POR WHATSAPP</a>
+
+        <p class="small-light">Por favor confirma antes del 10 de octubre de 2026.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p class="signature">Emily Isabella</p>
+      <p>07 · 11 · 2026</p>
+    </footer>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
